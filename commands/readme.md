@@ -1,4 +1,4 @@
 1. Get pod info
-```agsl
+```yaml
     kubectl get pods
 ```
