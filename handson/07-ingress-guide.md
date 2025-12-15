@@ -47,95 +47,101 @@ ingress-nginx-controller-xxxxx   Running
 
 ### Deployment
 
-Create `hello-deployment.yaml`:
+Create `deployment.yaml`:
 
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-app
+  name: nginx
+  namespace: nginx
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: hello
+      app: nginx
   template:
     metadata:
       labels:
-        app: hello
+        app: nginx
     spec:
       containers:
-      - name: hello
-        image: hashicorp/http-echo
-        args:
-          - "-text=Hello from KIND Ingress"
+      - name: nginx
+        image: nginx:latest
         ports:
-          - containerPort: 5678
+          - containerPort: 80
 ```
 
 Apply:
 
 ```bash
-kubectl apply -f hello-deployment.yaml
+kubectl apply -f deployment.yaml
 ```
 
 ---
 
 ### Service
 
-Create `hello-service.yaml`:
+Create `service.yaml`:
 
 ```yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-service
+  name: nginx
+  namespace: nginx
 spec:
   selector:
-    app: hello
+    app: nginx
   ports:
   - port: 80
-    targetPort: 5678
+    targetPort: 8080
 ```
 
 Apply:
 
 ```bash
-kubectl apply -f hello-service.yaml
+kubectl apply -f service.yaml
 ```
 
 ---
 
 ## 5. Create an Ingress Resource (HTTP Only)
 
-Create `hello-ingress.yaml`:
+Create `ingress.yaml`:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hello-ingress
+  name: nginx-ingress
+  namespace: nginx
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx
   rules:
-  - host: hello.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: hello-service
-            port:
-              number: 80
+    - http:
+        paths:
+          - path: /nginx
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: notes-app-service
+                port:
+                  number: 8000
 ```
 
 Apply:
 
 ```bash
-kubectl apply -f hello-ingress.yaml
+kubectl apply -f ingress.yaml
 ```
 
 ---

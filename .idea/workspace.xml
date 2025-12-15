@@ -95,11 +95,6 @@
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/main/java/com/alfarays/JenkinsDemoProject01Application.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/main/resources/application.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/test/java/com/alfarays/JenkinsDemoProject01ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handson/03-storage-volumes-pvc.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handson/04-service.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handson/05-one-tier-application-deployment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handson/06-ingress-demo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handson/07-ingress-guide.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM-PRACTICE/TERRAFORM-DAY-01/terraform.tf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM/TERRAFORM-IN-ONE-SHOT/main.tf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM/TERRAFORM-IN-ONE-SHOT/provider.tf" afterDir="false" />
@@ -299,9 +294,6 @@
       <change beforePath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/src/main/java/com/alfarays/resource/WelcomeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/src/main/java/com/alfarays/resource/WelcomeResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DEVOPS-PRACTICES/DEV-SEC-OPS-DEMO/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handson/jobs.md" beforeDir="false" afterPath="$PROJECT_DIR$/handson/02-jobs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handson/nginx-setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/handson/01-nginx-setup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handson/storage-volumes-pvc.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DEVOPS/DAY-01/backend/src/main/resources/application-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DSA/com.alsarays.app/MASTERCLASS/twodarray/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DSA/com.alsarays.app/MASTERCLASS/twodarray/TwoDArray.java" beforeDir="false" />
@@ -485,7 +477,7 @@
       <option name="presentableId" value="Default" />
       <updated>1765709868043</updated>
       <workItem from="1765709870895" duration="7592000" />
-      <workItem from="1765788123722" duration="4079000" />
+      <workItem from="1765788123722" duration="4674000" />
     </task>
     <servers />
   </component>
