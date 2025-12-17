@@ -95,6 +95,10 @@
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/main/java/com/alfarays/JenkinsDemoProject01Application.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/main/resources/application.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JENKINS-MASTER/JENKINS-DEMO-PROJECT-01/src/test/java/com/alfarays/JenkinsDemoProject01ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handson/08-stateful-set.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handson/09-config-map-secrets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handson/10-hpa-vpa-node-affinity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handson/11-hap-test-steps.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM-PRACTICE/TERRAFORM-DAY-01/terraform.tf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM/TERRAFORM-IN-ONE-SHOT/main.tf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TERRAFORM/TERRAFORM-IN-ONE-SHOT/provider.tf" afterDir="false" />
@@ -157,21 +161,68 @@
       <change afterPath="$PROJECT_DIR$/../task-management-system/src/main/resources/templates/login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../task-management-system/src/main/resources/templates/register.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../task-management-system/src/main/resources/templates/task-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/cart-service-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/cart-service-staging.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/order-service-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/order-service-staging.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/order-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/payment-service-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/config-server/src/main/resources/config/payment-service-staging.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/cart-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/cart-service/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/order-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/order-service/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/payment-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/payment-service/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/product-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../PURELY-GOODS/docker/backend/product-service/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/authorization-server/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/cart-service/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/config-server/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/discovery-server/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/gateway-server/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/order-service/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/payment-service/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/backend/product-service/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/deployment/frontend/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/authorization-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/authorization-server/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/cart-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/cart-service/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/config-server/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/discovery-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/discovery-server/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/gateway-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/gateway-server/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/order-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/order-service/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/payment-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/payment-service/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/product-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/backend/product-service/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/docker/frontend/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/constants/api-constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/core/auth.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/admin/admin.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/distributor/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/distributor/distributor.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/distributor/distributor.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/users/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/users/users.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/features/users/users.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/shared/validators/custom.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/shared/validators/password-match.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/app/shared/validators/password.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/environments/environment-default.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/environments/environment-docker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/frontend/src/environments/environment-production.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/authorization-server-database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/authorization-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/cart-service-database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/cart-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/config-map.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/config-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/discovery-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/frontend.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/gateway-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/order-service-database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/order-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/payment-service-database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/payment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/product-service-database.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/product-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SHOPPING HUB/kubernetes/secrets.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../microservices-3.4.1/section8/configserver/src/main/resources/config/eurekaserver.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DEVOPS-PRACTICES/AUANTUM-CART/.github/workflows/product-service-pipeline.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DEVOPS-PRACTICES/AUANTUM-CART/AUTHORIZATION-SERVICE/.gitattributes" beforeDir="false" />
@@ -459,7 +510,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -477,7 +528,9 @@
       <option name="presentableId" value="Default" />
       <updated>1765709868043</updated>
       <workItem from="1765709870895" duration="7592000" />
-      <workItem from="1765788123722" duration="4674000" />
+      <workItem from="1765788123722" duration="7776000" />
+      <workItem from="1765966609714" duration="8489000" />
+      <workItem from="1765978639799" duration="419000" />
     </task>
     <servers />
   </component>
